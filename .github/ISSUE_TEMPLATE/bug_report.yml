@@ -1,0 +1,37 @@
+name: "🐛 Bug report"
+description: "Signaler un bug"
+title: "[BUG] "
+labels: ["bug"]
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: Description du bug
+      description: Décris le problème rencontré.
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Étapes de reproduction
+      placeholder: |
+        1. Aller sur...
+        2. Cliquer sur...
+        3. Constater le problème
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Comportement attendu
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Comportement observé
+
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environnement technique
+      placeholder: OS, navigateur, version...
